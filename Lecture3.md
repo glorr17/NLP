@@ -5,7 +5,7 @@ sum of the input features, plus a constant called the bias term (also called the
 term):
 
 ```
-y=θ 0 +θ 1 x 1 +θ 2 x 2 +⋯+θnxn
+y=θ0 +θx1 +θx2 +⋯+θnxn
 ```
 - ŷ is the predicted value.
 - n is the number of features.
