@@ -97,7 +97,7 @@ just a few iterations, it has already converged to the solution. On the right, t
 ing rate is too high: the algorithm diverges, jumping all over the place and actually
 getting further and further away from the solution at every step.
 
-To find a good learning rate, you can use grid search (see Chapter 2). However, you
+To find a good learning rate, you can use grid search. However, you
 may want to limit the number of iterations so that grid search can eliminate models
 that take too long to converge.
 
