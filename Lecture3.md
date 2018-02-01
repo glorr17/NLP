@@ -175,43 +175,25 @@ ing schedule.
 # Tensorflow!
 
 
-## TensorFlow is a powerful open source software library for numerical computation,
-
- particularly well suited and fine-tuned for large-scale Machine Learning. Its basic
-
- principle is simple: you first define in Python a graph of computations to perform
-
- (for example, the one in Figure 9-1), and then TensorFlow takes that graph and runs
-
- it efficiently using optimized C++ code.
-
- Most importantly, it is possible to break up the graph into several chunks and run
-
- them in parallel across multiple CPUs or GPUs, TensorFlow
-
- also supports distributed computing, so you can train colossal neural networks on
-
- humongous training sets in a reasonable amount of time by splitting the computa‐
-
- tions across hundreds of servers. TensorFlow can train a network
-
- with millions of parameters on a training set composed of billions of instances with
-
- millions of features each. This should come as no surprise, since TensorFlow was
-
- developed by the Google Brain team and it powers many of Google’s large-scale serv‐
-
- ices, such as Google Cloud Speech, Google Photos, and Google Search.
-
- When TensorFlow was open-sourced in November 2015, there were already many
-
- popular open source libraries for Deep Learning, and to be fair
-
- most of TensorFlow’s features already existed in one library or another. Nevertheless,
-
- TensorFlow’s clean design, scalability, flexibility,^1 and great documentation (not to
-
- mention Google’s name) quickly boosted it to the top of the list. 
+ TensorFlow is a powerful open source software library for numerical computation,
+articularly well suited and fine-tuned for large-scale Machine Learning. Its basic
+rinciple is simple: you first define in Python a graph of computations to perform
+for example, the one in Figure 9-1), and then TensorFlow takes that graph and runs
+t efficiently using optimized C++ code.
+ost importantly, it is possible to break up the graph into several chunks and run
+hem in parallel across multiple CPUs or GPUs, TensorFlow
+lso supports distributed computing, so you can train colossal neural networks on
+umongous training sets in a reasonable amount of time by splitting the computa‐
+ions across hundreds of servers. TensorFlow can train a network
+ith millions of parameters on a training set composed of billions of instances with
+illions of features each. This should come as no surprise, since TensorFlow was
+eveloped by the Google Brain team and it powers many of Google’s large-scale serv‐
+ces, such as Google Cloud Speech, Google Photos, and Google Search.
+hen TensorFlow was open-sourced in November 2015, there were already many
+opular open source libraries for Deep Learning, and to be fair
+ost of TensorFlow’s features already existed in one library or another. Nevertheless,
+ensorFlow’s clean design, scalability, flexibility,^1 and great documentation (not to
+ention Google’s name) quickly boosted it to the top of the list. 
 
 
 ## Installation
@@ -233,21 +215,14 @@ x = tf.Variable(3, name="x")
 y = tf.Variable(4, name="y")
 f = x*x*y + y + 2
 ```
- That’s all there is to it! The most important thing to understand is that this code does
-
- not actually perform any computation, even though it looks like it does (especially the
-
- last line). It just creates a computation graph. In fact, even the variables are not ini‐
-
- tialized yet. To evaluate this graph, you need to open a TensorFlow session and use it
-
- to initialize the variables and evaluate f. A TensorFlow session takes care of placing
-
- the operations onto devices such as CPUs and GPUs and running them, and it holds
-
- all the variable values. The following code creates a session, initializes the variables,
-
- and evaluates, and f then closes the session (which frees up resources):
+That’s all there is to it! The most important thing to understand is that this code does
+not actually perform any computation, even though it looks like it does (especially the
+last line). It just creates a computation graph. In fact, even the variables are not ini‐
+tialized yet. To evaluate this graph, you need to open a TensorFlow session and use it
+to initialize the variables and evaluate f. A TensorFlow session takes care of placing
+the operations onto devices such as CPUs and GPUs and running them, and it holds
+all the variable values. The following code creates a session, initializes the variables,
+and evaluates, and f then closes the session (which frees up resources):
 
 ```
 >>> sess = tf.Session()
@@ -268,23 +243,7 @@ x.initializer.run()
 y.initializer.run()
 result = f.eval()
 ```
- Inside the with block, the session is set as the default session. Calling x.initial
-
- izer.run() is equivalent to calling tf.get_default_session().run(x.initial
-
- izer), and similarly f.eval() is equivalent to calling
-
- tf.get_default_session().run(f). This makes the code easier to read. Moreover,
-
- the session is automatically closed at the end of the block.
-
- Instead of manually running the initializer for every single variable, you can use the
-
- global_variables_initializer() function. Note that it does not actually perform
-
- the initialization immediately, but rather creates a node in the graph that will initialize
-
- all variables when it is run:
+ Inside the with block, the session is set as the default session. Calling x.initial izer.run() is equivalent to calling tf.get_default_session().run(x.initial izer), and similarly f.eval() is equivalent to calling tf.get_default_session().run(f). This makes the code easier to read. Moreover, the session is automatically closed at the end of the block. Instead of manually running the initializer for every single variable, you can use the global_variables_initializer() function. Note that it does not actually perform the initialization immediately, but rather creates a node in the graph that will initialize all variables when it is run:
 
 ```
 init = tf.global_variables_initializer() # prepare an init node
@@ -294,15 +253,11 @@ with tf.Session() as sess:
 init.run() # actually initialize all the variables
 result = f.eval()
 ```
-#### Inside Jupyter or within a Python shell you may prefer to create an InteractiveSes
-
-#### sion. The only difference from a regular Session is that when an InteractiveSes
-
-#### sion is created it automatically sets itself as the default session, so you don’t need a
-
-#### with block (but you do need to close the session manually when you are done with
-
-#### it):
+Inside Jupyter or within a Python shell you may prefer to create an InteractiveSes
+sion. The only difference from a regular Session is that when an InteractiveSes
+sion is created it automatically sets itself as the default session, so you don’t need a
+with block (but you do need to close the session manually when you are done with
+it):
 
 ```
 >>> sess = tf.InteractiveSession()
@@ -587,4 +542,4 @@ value of X and y via the feed_dict parameter when evaluating a node that depends
 on either of them.
 
 # Tensorflow tutorial on logistic regression
-https://www.tensorflow.org/tutorials/wide#how_logistic_regression_works
+(https://www.tensorflow.org/tutorials/wide#how_logistic_regression_works)
