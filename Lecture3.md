@@ -1,6 +1,7 @@
 # Building up tensorflow
 
 Quick review of logistic regression: https://www.tensorflow.org/tutorials/wide#how_logistic_regression_works
+
 Tensorflow API tutorial: https://cs224d.stanford.edu/lectures/CS224d-Lecture7.pdf
 
 ## Installation
