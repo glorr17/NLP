@@ -51,7 +51,7 @@ This is a tentative schedule, and subject to change. Please check here regularly
 | **11** | Translation |    | | *Project 1 due* |
 | **12** | Convolutional Neural Networks  *(Quiz 4)* |    | |  *Project 2 assigned* |
 | **13** | QA Systems I |    | | |
-| **14** | QA Systems II | *(Quiz 5)*   *Project 2 due during finals week* | | |
+| **14** | QA Systems II  *(Quiz 5)*  |   | | *Project 2 due during finals week*|
 
 ### Textbooks and Course Resources:
 Class slack channel - https://gwunlp.slack.com
