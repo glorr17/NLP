@@ -40,8 +40,8 @@ This is a tentative schedule, and subject to change. Please check here regularly
 | :-------------: |:-------------| :-----|:----|:------|
 | **1**| Introduction, regex, tf-idf | | SLP: Chapter 2, 15 | **Movie review classification (Due on Lecture 4)**|
 | **2** | Using tf-idf for classification and clustering | | SLP: Chapter 15 | |
-| **3** | Introduction to tensorflow, logistic regression review  |  (http://cs231n.github.io/optimization-1/)   | | |
-| **4** | Feed forward networks *(Quiz 1)*|    | (http://cs231n.github.io/neural-networks-1/), (http://cs231n.github.io/linear-classify/) | |
+| **3** | Introduction to tensorflow, logistic regression review  |   |  http://cs231n.github.io/optimization-1/ | |
+| **4** | Feed forward networks *(Quiz 1)*|    | http://cs231n.github.io/neural-networks-1/, http://cs231n.github.io/linear-classify/ | |
 | **5** | Word2vec, Glove representations |    | | |
 | **6** | Classification, other word representations *(Quiz 2)* |   | | |
 | **7** | Recurrent Neural Networks, LSTM |   | |*Project 1 assigned*|
