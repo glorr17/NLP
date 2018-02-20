@@ -43,8 +43,8 @@ This is a tentative schedule, and subject to change. Please check here regularly
 | **3** | Introduction to tensorflow, logistic regression review  |   |  http://cs231n.github.io/optimization-1/ | |
 | **4** | Feed forward networks *(Quiz 1)*|    | http://cs231n.github.io/neural-networks-1/, http://cs231n.github.io/linear-classify/ | |
 | **5** | Word2vec, Glove representations |    | SLP: Chapter 16 | **Word embedding assignment (Due on Lecture 8)** |
-| **6** | Classification, other word representations *(Quiz 2)* |   | | |
-| **7** | Recurrent Neural Networks, LSTM |   | |*Project 1 assigned*|
+| **6** | Classification, other word representations |   | | |
+| **7** | Recurrent Neural Networks, LSTM *(Quiz 2)* |   | |*Project 1 assigned*|
 | **8** | Dependency Parsing  |    | |  |
 | **9** | Language models *(Quiz 3)* |    | | |
 | **10** | Seq2Seq,  Attention |    | | |
